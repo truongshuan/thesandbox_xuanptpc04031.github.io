@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Poppins:wght@200;300;400&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #252C34;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+}
+
+.a {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+
+.fa-circle-question {
+    font-size: 17px;
+    color: #fff;
+}
+
+.form button {
+    background-color: #252C34;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.titte-social {
+    font-size: 19px;
+    color: #fff;
+    padding: 0px 20px;
+}
+
+.list-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin: 10px 10px;
+    width: 120px;
+    height: 60px;
+    background-color: #252c34;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box a {
+    margin-left: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.box img {
+    width: 30px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .social-panel-container.visible {
+        transform: translateX(0px);
+    }
+    .floating-btn {
+        right: 10px;
+    }
+    .list-social {
+        flex-direction: column;
+    }
+}
